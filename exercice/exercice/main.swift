@@ -25,10 +25,10 @@ let pp = Existence(birthdate: birthdate)
 print(pp.willProbablyDieSoon())
 
 
-let person = Person(firstname: "Louis", lastname: "Loiseau-Billon", gender: Person.Gender.Male, email: "loiseaubillonlouis@gmail.com", birthdate: Date(timeIntervalSinceReferenceDate: -2993456789.0))
+let person = Person(firstname: "Louis", lastname: "Loiseau-Billon", gender: Gender.Male, email: "loiseaubillonlouis@gmail.com", birthdate: Date(timeIntervalSinceReferenceDate: -2993456789.0))
 // person.show()
 
-let person2 = Person(firstname: "Zya", lastname: "Nassurally", gender: Person.Gender.Female, email: "zya.nassurally@gmail.com", birthdate: (date: "2000", format: "YYYY"))
+let person2 = Person(firstname: "Zya", lastname: "Nassurally", gender: Gender.Female, email: "zya.nassurally@gmail.com", birthdate: (date: "2000", format: "YYYY"))
 // person2.show()
 
 let api = ApiManager()

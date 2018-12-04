@@ -64,13 +64,13 @@ class Existence {
     }
 }
 
+enum Gender: String {
+    case Male = "male"
+    case Female = "female"
+    case Other = "other"
+}
 
 class Person: Existence {
-    enum Gender: String {
-        case Male = "male"
-        case Female = "female"
-        case Other = "other"
-    }
     
     var gender: Gender
     var firstname: String
@@ -103,7 +103,7 @@ class Person: Existence {
         case .Male:
             print("gender : Male")
         case .Female:
-            print("gender : Male")
+            print("gender : Female")
         case .Other:
             print("gender : Other")
         }

@@ -20,7 +20,7 @@ extension ApiManager {
             let gender = results[0]["gender"]! as! String
             let dob = results[0]["dob"] as! [String: Any]
             let birthdate = dob["date"]! as! String
-            let person = Person(firstname: firstname, lastname: lastname, gender: Person.Gender(rawValue: gender)!, email: email, birthdate: birthdate.toDate(format: "yyyy-MM-dd'T'HH:mm:ssZ"))
+            let person = Person(firstname: firstname, lastname: lastname, gender: Gender(rawValue: gender)!, email: email, birthdate: birthdate.toDate(format: "yyyy-MM-dd'T'HH:mm:ssZ"))
             completion(person)
         })
     }
